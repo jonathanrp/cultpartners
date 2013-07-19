@@ -22,7 +22,7 @@ define([
         loadJSON : function(callback) {
 
             var domain = window.location.origin,
-                url = 'http://www.cultsf.com/wordpress/?json=get_category_posts&slug=projects',
+                url = 'http://cultpartners.com/wordpress/?json=get_category_posts&slug=projects',
                 self = this;
 
             $.ajax({
@@ -50,7 +50,7 @@ define([
 
                     $(self.filteredCategoriesSlug).each(function( index ) {
                         $.ajax({
-                            url: 'http://www.cultsf.com/wordpress/?json=get_category_posts&slug='+self.filteredCategoriesSlug[index],
+                            url: 'http://cultpartners.com/wordpress/?json=get_category_posts&slug='+self.filteredCategoriesSlug[index],
                             type: 'GET',
                             dataType: 'JSONP',
                             success: function(data){
