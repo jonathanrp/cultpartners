@@ -1,0 +1,15 @@
+<div class="main" id="template-contact">
+  <div class="slidesContainer">
+  	<div id="slides">
+		<% _.each( posts, function( post ){ %>
+		<div class="slide" id="contact">
+		    <div class="textContainer">
+		    	<h1><%=post.title%></h1>
+		    	<img src="<%=post.thumb%>">
+		    	<%=post.content%>
+		    </div>
+		</div>
+		<% }); %>
+	</div>
+  </div>
+</div><!-- .main -->

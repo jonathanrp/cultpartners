@@ -1,0 +1,971 @@
+@import url("//hello.myfonts.net/count/278456");
+/* @license
+ * MyFonts Webfont Build ID 2589782, 2013-06-27T03:05:15-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Humanist 521 Light by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/humanist-521/light/
+ * Copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2589782
+ * 
+ * © 2013 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'Humanist521BT-Light';
+  src: url("../fonts/278456_0_0.eot");
+  src: url("../fonts/278456_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/278456_0_0.woff") format("woff"), url("../fonts/278456_0_0.ttf") format("truetype");
+}
+
+/***************************************************/
+/* ---- GLOBAL STYLING --------------------------- */
+/***************************************************/
+/* <Client Name> */
+/* <Project Name>*/
+/* TOC */
+/*  1. Global Constants */
+/*  2. CSS Reset */
+/*  3. Layout */
+/*  4. Content */
+/***************************************************/
+/* 1. GLOBAL CONSTANTS --------------------------- */
+/***************************************************/
+/* Helpers */
+/* Fonts */
+/* Colors */
+/*------------------------------------------------ */
+/* IMPORTS                                         */
+/*------------------------------------------------ */
+/***************************************************/
+/* 2. CSS RESET ---------------------------------- */
+/***************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v2.0 | 20110126 */
+/* License: none (public domain) */
+/* line 9, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 18, ../scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 21, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 24, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 27, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 30, ../scss/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ::::: Helpers ::::: */
+/* line 40, ../scss/_reset.scss */
+.ir {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 44, ../scss/_reset.scss */
+.ir span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: no-repeat 0 0;
+}
+
+/* line 53, ../scss/_reset.scss */
+.irt {
+  text-indent: -99999px;
+}
+
+/* line 56, ../scss/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/*Compass Reset*/
+/*@import "compass/reset";*/
+/***************************************************/
+/* 3. LAYOUT -----------------------------------  */
+/***************************************************/
+/*------------------------------------------------ */
+/* GENERAL                                         */
+/*------------------------------------------------ */
+/* line 11, ../scss/_layout.scss */
+html,
+body {
+  color: #58595b;
+  background-color: #cccccc;
+  font-size: 100%;
+}
+/* line 16, ../scss/_layout.scss */
+html #prevContainer,
+body #prevContainer {
+  width: 100%;
+  float: left;
+  position: absolute;
+}
+/* line 22, ../scss/_layout.scss */
+html #nextContainer,
+body #nextContainer {
+  width: 100%;
+  float: left;
+}
+/* line 27, ../scss/_layout.scss */
+html #container,
+body #container {
+  width: 100%;
+  float: left;
+}
+
+/* line 33, ../scss/_layout.scss */
+#backbone-wrapper {
+  width: 1200px;
+  min-height: 900px;
+  background: white;
+  margin: 30px auto 0 auto;
+}
+
+/*------------------------------------------------ */
+/*  HEADER                                         */
+/*------------------------------------------------ */
+/* line 44, ../scss/_layout.scss */
+#mainLogo {
+  z-index: 12;
+  overflow: hidden;
+  background: url(../img/cult-logo.png) no-repeat;
+  background-size: 100%;
+  float: left;
+  margin: 40px 0 0 45px;
+  position: absolute;
+}
+/* line 55, ../scss/_layout.scss */
+#mainLogo h1 a {
+  display: block;
+  width: 397px;
+  height: 91px;
+  text-indent: -9999px;
+}
+
+/*------------------------------------------------ */
+/*  MENU                                           */
+/*------------------------------------------------ */
+/* line 66, ../scss/_layout.scss */
+#menu {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70%;
+  z-index: 11;
+  float: right;
+  margin: 64px 60px 0 0;
+  position: relative;
+}
+/* line 74, ../scss/_layout.scss */
+#menu li {
+  text-align: right;
+  margin-bottom: 5px;
+}
+/* line 77, ../scss/_layout.scss */
+#menu li a {
+  text-decoration: none;
+  color: #58595b;
+  display: block;
+}
+/* line 81, ../scss/_layout.scss */
+#menu li a:hover {
+  opacity: 0.5;
+}
+
+/* line 88, ../scss/_layout.scss */
+.menuSelected {
+  text-decoration: underline !important;
+}
+
+/* line 92, ../scss/_layout.scss */
+#menuItemFacebook {
+  margin-top: 20px;
+}
+
+/* line 96, ../scss/_layout.scss */
+#portfolioButton {
+  display: none;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  z-index: 3;
+}
+/* line 103, ../scss/_layout.scss */
+#portfolioButton a {
+  font-family: Humanist521BT-Light;
+  text-decoration: none;
+  color: #58595b;
+}
+/* line 107, ../scss/_layout.scss */
+#portfolioButton a:hover {
+  opacity: 0.5;
+}
+
+/*------------------------------------------------ */
+/*  SLIDESJS                                       */
+/*------------------------------------------------ */
+/* line 116, ../scss/_layout.scss */
+.slidesContainer {
+  position: absolute;
+  width: 1200px;
+}
+
+/* line 121, ../scss/_layout.scss */
+.slide {
+  width: 100%;
+  height: 100%;
+}
+/* line 125, ../scss/_layout.scss */
+.slide .featuredImage {
+  width: 100%;
+  height: 100%;
+}
+
+/* Prevent the slideshow from flashing on load */
+/* line 131, ../scss/_layout.scss */
+#slides {
+  display: none;
+}
+
+/* line 134, ../scss/_layout.scss */
+.slidesjs-navigation {
+  display: none;
+}
+
+/* line 139, ../scss/_layout.scss */
+.slidesjs-pagination li {
+  display: none;
+}
+
+/* line 158, ../scss/_layout.scss */
+.customNavButton {
+  position: absolute;
+  display: block;
+  z-index: 99;
+  top: 405px;
+  display: none;
+}
+
+/* line 166, ../scss/_layout.scss */
+#customNavNext {
+  margin-left: 1108px;
+  width: 90px;
+  height: 150px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../img/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px 95px;
+}
+/* line 153, ../scss/_layout.scss */
+#customNavNext:hover {
+  opacity: 0.5;
+}
+
+/* line 171, ../scss/_layout.scss */
+#customNavPrev {
+  width: 90px;
+  height: 150px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url(../img/arrow_left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px 95px;
+}
+/* line 153, ../scss/_layout.scss */
+#customNavPrev:hover {
+  opacity: 0.5;
+}
+
+/* line 185, ../scss/_layout.scss */
+#customNavPrevBlock {
+  width: 90px;
+  height: 150px;
+  overflow: hidden;
+  text-indent: -9999px;
+  display: none;
+}
+
+/* line 189, ../scss/_layout.scss */
+#customNavNextBlock {
+  width: 90px;
+  height: 150px;
+  overflow: hidden;
+  text-indent: -9999px;
+  display: none;
+  margin-left: 1108px;
+}
+
+/*------------------------------------------------ */
+/*  CONTENT                                        */
+/*------------------------------------------------ */
+/* line 198, ../scss/_layout.scss */
+#loadingIcon {
+  color: #58595b;
+  position: absolute;
+  top: 480px;
+  left: 50%;
+  text-align: center;
+  font-family: Humanist521BT-Light;
+  width: 82px;
+  height: 82px;
+  margin: -41px 0 0 -41px;
+  display: none;
+}
+/* line 210, ../scss/_layout.scss */
+#loadingIcon span {
+  width: 82px;
+  height: 82px;
+  background: url(../img/loader.png);
+  display: block;
+  opacity: 0.3;
+  -moz-animation: spin 1.5s infinite linear;
+  -webkit-animation: spin 1.5s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 223, ../scss/_layout.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 224, ../scss/_layout.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 227, ../scss/_layout.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 228, ../scss/_layout.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 231, ../scss/_layout.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 232, ../scss/_layout.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 235, ../scss/_layout.scss */
+#template-slider .textContainer {
+  width: 100%;
+  position: absolute;
+  right: 60px;
+  bottom: 40px;
+}
+/* line 241, ../scss/_layout.scss */
+#template-slider .textContainer h1 {
+  text-align: right;
+  color: #58595b;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+/* line 249, ../scss/_layout.scss */
+#template-slider .textContainer p {
+  text-align: right;
+  color: gray;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+}
+
+/* line 259, ../scss/_layout.scss */
+#about .textContainer {
+  width: 50%;
+  margin: 320px 0 0 300px;
+}
+/* line 263, ../scss/_layout.scss */
+#about .textContainer h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+}
+/* line 267, ../scss/_layout.scss */
+#about .textContainer p {
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 150%;
+  margin-bottom: 15px;
+  font-size: 120%;
+  line-height: 190%;
+}
+
+/* line 277, ../scss/_layout.scss */
+.people .textContainer {
+  width: 70%;
+  margin: 320px 0 0 300px;
+}
+/* line 281, ../scss/_layout.scss */
+.people .textContainer h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+  margin-left: 300px;
+}
+/* line 285, ../scss/_layout.scss */
+.people .textContainer p {
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 150%;
+  margin-bottom: 15px;
+  margin-left: 300px;
+  width: 50%;
+}
+/* line 290, ../scss/_layout.scss */
+.people .textContainer img {
+  z-index: 2 !important;
+  width: 250px;
+  border: 2px solid gray;
+  float: left;
+}
+
+/* line 300, ../scss/_layout.scss */
+.peopleIndex .textContainer {
+  width: 70%;
+  margin: 320px 0 0 300px;
+}
+/* line 304, ../scss/_layout.scss */
+.peopleIndex .textContainer h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  margin-left: -2px;
+}
+/* line 310, ../scss/_layout.scss */
+.peopleIndex .textContainer .peopleItem {
+  width: 210px;
+  float: left;
+  margin: 30px 40px 0 0;
+}
+/* line 315, ../scss/_layout.scss */
+.peopleIndex .textContainer .peopleItem img {
+  width: 200px;
+  position: static !important;
+  border: 2px solid gray;
+}
+/* line 321, ../scss/_layout.scss */
+.peopleIndex .textContainer .peopleItem h1 {
+  margin-top: 10px;
+  font-size: 120%;
+}
+/* line 325, ../scss/_layout.scss */
+.peopleIndex .textContainer .peopleItem h1 a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 329, ../scss/_layout.scss */
+.peopleIndex .textContainer .peopleItem h1 a:hover {
+  text-decoration: underline;
+  color: #231f20;
+}
+
+/* line 340, ../scss/_layout.scss */
+#awards .textContainer {
+  width: 60%;
+  margin: 320px 0 0 300px;
+}
+/* line 344, ../scss/_layout.scss */
+#awards .textContainer h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+}
+/* line 347, ../scss/_layout.scss */
+#awards .textContainer p {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+/* line 351, ../scss/_layout.scss */
+#awards .textContainer strong {
+  font-weight: bold;
+}
+/* line 354, ../scss/_layout.scss */
+#awards .textContainer ol {
+  font-size: 80%;
+  font-family: "Times New Roman", Times, serif;
+  -moz-column-count: 2;
+  -moz-column-gap: 2px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 5px;
+  column-count: 2;
+  column-gap: 5px;
+}
+
+/* line 369, ../scss/_layout.scss */
+#contact .textContainer {
+  width: 60%;
+  margin: 320px 0 0 300px;
+}
+/* line 373, ../scss/_layout.scss */
+#contact .textContainer h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 150%;
+  font-family: Humanist521BT-Light;
+  letter-spacing: 2px;
+}
+/* line 376, ../scss/_layout.scss */
+#contact .textContainer p {
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+/* line 379, ../scss/_layout.scss */
+#contact .textContainer img {
+  z-index: 2 !important;
+  float: left;
+  margin: 0 30px 0 0;
+}
+/* line 384, ../scss/_layout.scss */
+#contact .textContainer a {
+  color: #231f20;
+}
+
+/*------------------------------------------------ */
+/*  MEDIA QUERIES                                  */
+/*------------------------------------------------ */
+/* Custom Medium Size ---------- */
+@media only screen and (max-height: 850px) {
+  /* line 399, ../scss/_layout.scss */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* line 403, ../scss/_layout.scss */
+  #backbone-wrapper {
+    width: 850px;
+    min-width: 850px;
+    height: auto;
+    min-height: 670px;
+  }
+
+  /* line 410, ../scss/_layout.scss */
+  #loadingIcon {
+    top: 370px;
+  }
+
+  /* line 414, ../scss/_layout.scss */
+  .slidesContainer {
+    width: 850px;
+    min-height: 670px;
+    height: auto;
+  }
+  /* line 419, ../scss/_layout.scss */
+  .slidesContainer .featuredImage {
+    width: 850px;
+    height: auto;
+  }
+
+  /* line 425, ../scss/_layout.scss */
+  .customNavButton {
+    top: 280px;
+  }
+
+  /* line 429, ../scss/_layout.scss */
+  #customNavNext {
+    margin-left: 758px;
+  }
+
+  /* line 433, ../scss/_layout.scss */
+  #customNavNextBlock {
+    margin-left: 758px;
+  }
+
+  /* line 437, ../scss/_layout.scss */
+  #mainLogo {
+    background: url(../img/cult-logo-small.png) no-repeat;
+    margin: 40px 0 0 45px;
+  }
+  /* line 441, ../scss/_layout.scss */
+  #mainLogo h1 a {
+    width: 248px;
+    height: 57px;
+  }
+
+  /* line 451, ../scss/_layout.scss */
+  #template-slider .textContainer h1 {
+    font-size: 130%;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  /* line 456, ../scss/_layout.scss */
+  #template-slider .textContainer p {
+    font-size: 90%;
+    letter-spacing: 2px;
+  }
+
+  /* line 464, ../scss/_layout.scss */
+  #awards .textContainer {
+    margin: 210px 0 0 200px;
+  }
+  /* line 467, ../scss/_layout.scss */
+  #awards .textContainer ol {
+    font-size: 70%;
+  }
+
+  /* line 475, ../scss/_layout.scss */
+  #about .textContainer {
+    width: 50%;
+    margin: 210px 0 0 200px;
+  }
+  /* line 479, ../scss/_layout.scss */
+  #about .textContainer p {
+    font-size: 100%;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 150%;
+    margin-bottom: 15px;
+    font-size: 100%;
+    line-height: 160%;
+  }
+
+  /* line 488, ../scss/_layout.scss */
+  .people .textContainer {
+    width: 70%;
+    margin: 210px 0 0 200px;
+  }
+  /* line 492, ../scss/_layout.scss */
+  .people .textContainer h1 {
+    margin-left: 170px;
+  }
+  /* line 495, ../scss/_layout.scss */
+  .people .textContainer p {
+    margin-left: 170px;
+    width: 60%;
+    font-size: 90%;
+    line-height: 130%;
+  }
+  /* line 502, ../scss/_layout.scss */
+  .people .textContainer img {
+    width: 140px;
+  }
+
+  /* line 509, ../scss/_layout.scss */
+  .peopleIndex .textContainer {
+    width: 70%;
+    margin: 210px 0 0 200px;
+  }
+  /* line 513, ../scss/_layout.scss */
+  .peopleIndex .textContainer .peopleItem {
+    width: 160px;
+    margin: 30px 10px 0 0;
+  }
+  /* line 517, ../scss/_layout.scss */
+  .peopleIndex .textContainer .peopleItem img {
+    width: 150px;
+  }
+
+  /* line 526, ../scss/_layout.scss */
+  #contact .textContainer {
+    width: 60%;
+    margin: 210px 0 0 200px;
+  }
+}
+/* Smartphones (portrait and landscape) ---------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /*
+  and (min-width : 320px) 
+  and (max-width : 480px) {
+  */
+  /* line 557, ../scss/_layout.scss */
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 561, ../scss/_layout.scss */
+  .slide .featuredImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*
+    
+  
+    .slidesContainer {
+      margin: 200px auto;
+      width: 950px;
+      
+      border: 1px solid red;
+  
+      .featuredImage {
+        width: 1300px;
+        margin-left: -300px; 
+      }
+    }
+  
+    #customNav {
+      z-index: 10;
+      display: none;
+      width: 100%;
+      height: $siteHeight;
+    }*/
+  /*
+
+
+  .slidesContainer {
+    width: auto;
+
+    .featuredImage {
+      width: 320px;
+    }
+  }
+  */
+  /*
+    body {
+      font-size: 250%;
+    }
+  
+    #mobileLogoBackground {
+      display: block;
+    }
+  
+    #mainLogo {
+      top: 10px;
+      left: 10px;
+      width: 94%;
+      max-width: 94%;
+      margin: 1%;
+  
+      h1 {
+        a{
+          display: block;
+          width: 420px;
+          height: 400px;
+        }
+      }
+    }
+  
+    @mixin navBlockItem{
+      width: 250px;
+      height: 350px;
+    }
+  
+    #navBlock {
+      #navBlockRight {
+        @include navBlockItem;
+      }
+      #navBlockLeft {
+        @include navBlockItem;
+      }
+    }
+  
+    @mixin arrow($img) {
+    width: 180px;
+    height: 300px;
+    background: $img;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px 190px;
+    &:hover {
+      opacity: 1;
+    }
+    }
+    .slides-navigation a.prev {
+      left: $margin;
+      @include arrow(url(../img/arrow_left.png));
+    }
+    .slides-navigation a.next {
+      right: $margin;
+      @include arrow(url(../img/arrow_right.png));
+    }
+  
+    #menu {
+      top: 18%;
+      right: 30px;
+  
+      li {
+        margin-bottom: 40px;
+        display: none;
+      }
+      .menuMobile {
+        display: block;
+      }
+    }
+  
+    .slides-container {
+      .textContainer {
+        display: none;
+      }
+    }
+  
+    #awards {
+      .textContainer {
+        width: 70%;
+        left: 0;
+        margin-left: 0;
+        top: $mobileTopMargin;
+        height: 75%;
+        overflow: auto;
+        padding-right: 10%;
+        padding-left: 20%;
+        padding-bottom: 50px;
+  
+        p {
+          font-size: 90%;
+        }
+  
+        ol {
+          font-size: 100%;
+          -moz-column-count: 1;
+          -moz-column-gap: 0px;
+          -webkit-column-count: 1;
+          -webkit-column-gap: 0px;
+          column-count: 1;
+          column-gap: 0px;
+        }
+      }
+    }
+  
+    #portfolioButton {
+      a {
+        display: none;
+      }
+    }
+  
+    #about {
+    .textContainer {
+      width: 60%;
+      left: 20%;
+      margin-left: 0;
+      top: $mobileTopMargin;
+        p {
+          line-height: 110%;
+          font-size: 100%;
+        }
+      }
+    }
+  
+    #contact {
+      .textContainer {
+        width: 70%;
+        left: 60%;
+        margin-left: -35%;
+        top: $mobileTopMargin;
+      }
+  
+      img {
+        margin: 0 90px 30px 0 !important;
+      }
+    }
+  
+    .people {
+      .textContainer {
+        display: block !important;
+        width: 65%;
+        left: 0;
+        margin-left: 0;
+        top: $mobileTopMargin;
+        overflow: auto;
+        padding-right: 15%;
+        padding-left: 20%;
+        padding-bottom: 50px;
+  
+        h1 {
+          text-align: left;
+          margin-left: 0;
+        }
+        p {
+          text-align: left;
+          margin-top: 20px;
+          margin-left: 0;
+          font-size: 90%;
+        }
+  
+        img {
+          display: none;
+        }
+      }
+    }
+  
+    .peopleIndex {
+      .textContainer {
+        left: 50%;
+        top: $mobileTopMargin;
+        margin-left: -25%;
+        display: block;
+  
+        .peopleItem {
+          width: 100%;
+          float: left;
+          margin: 30px 40px 30px 0;
+  
+          img {
+            width: 100px;
+            float: left;
+          }
+  
+          h1 {
+            font-size: 130%;
+            float: left;
+            margin: 20px 0 0 20px;
+          }
+        }
+      }
+    }
+  */
+}

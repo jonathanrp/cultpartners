@@ -1,0 +1,77 @@
+/***************************************************/
+/* ---- GLOBAL STYLING --------------------------- */
+/***************************************************/
+
+/* <Client Name> */
+/* <Project Name>*/ 
+
+/* TOC */
+/*  1. Global Constants */
+/*  2. CSS Reset */
+/*  3. Layout */
+/*  4. Content */
+
+
+/***************************************************/
+/* 1. GLOBAL CONSTANTS --------------------------- */
+/***************************************************/
+
+/* Helpers */
+$center: 0 auto;
+$indentPosition: -9999px;
+
+/* Fonts */
+$arialFont: Arial, Helvetica, sans-serif;
+$timesFont: "Times New Roman", Times, serif;
+$humanistFont: Humanist521BT-Light;
+$fontSizeGeneral: 70%;
+
+/* Colors */
+$gray1Color: #58595B;
+$gray2Color: #231F20;
+$gray3Color: #808080;
+$gray4Color: #CCC;
+$gray5Color: #EEE;
+$fontColor : $gray1Color;
+$backgroundColor : $gray4Color;
+
+$siteWidth: 1200px;
+$siteHeight: 900px;
+$siteWidthMed: 850px;
+$siteHeightMed: 670px;
+$margin: 2%;
+$mobileTopMargin: 30%;
+$contentTopMargin: 320px;
+$contentLeftMargin: 300px;
+$contentTopMarginMed: 210px;
+$contentLeftMarginMed: 200px;
+$contentMargin: $contentTopMargin 0 0 $contentLeftMargin;
+$contentMarginMed: $contentTopMarginMed 0 0 $contentLeftMarginMed;
+$navTopMargin: 405px;
+$navTopMarginMed: 280px;
+$navLeftMargin: 1108px;
+$navLeftMarginMed: 758px;
+$letterSpacing: 2px;
+
+@mixin contentHeader {
+	text-align: left;
+    margin-bottom: 20px;
+    font-size: 150%;
+    font-family: $humanistFont;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin contentText {
+	font-size: 100%;
+    font-family: $timesFont;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+
+/*------------------------------------------------ */
+/* IMPORTS                                         */
+/*------------------------------------------------ */
+@import "reset";
+
+/*Compass Reset*/
+/*@import "compass/reset";*/

@@ -1,0 +1,28 @@
+<div class="main" id="template-people">
+	<div class="slidesContainer">
+		<div id="slides">
+			<div class="peopleIndex slide">
+				<div class="textContainer">
+					<h1>PARTNERS</h1>
+					<% _.each( posts, function( post ){ %>
+					<div class="peopleItem">
+						<img src="<%=post.thumb%>">
+						<h1><a href="#" class="peopleLink" data-index="<%=post.index%>"><%=post.title%></a></h1>
+					</div>
+					<% }); %>
+				</div>
+			</div>
+			<% _.each( posts, function( post ){ %>
+			<div class="people slide">
+			    
+			    <div class="textContainer">
+			    	<img src="<%=post.thumb%>">
+			    	<h1><%=post.title%></h1>
+			    	<%=post.content%>
+			    </div>
+
+			</div>
+			<% }); %>
+		</div>
+	</div>
+</div><!-- .main -->
